@@ -1,4 +1,4 @@
-FROM arm64v8/alpine
+FROM alpine:3.7
 RUN apk --update add openjdk8-jre
 ENV APP_DIR=/saartha/saartha-support-rulesengine
 COPY *.jar $APP_DIR/
