@@ -33,4 +33,14 @@ spring:
   cloud:
     consul:
       discovery:
-        health-check-path: /api/v1/ping
+        health-check-path: /ping
+  data:
+    mongodb:
+      username: rules_engine_user
+      password: password
+      database: rules_engine_db
+      host: edgex-mongo
+      port: 27017
+      connectTimeout: 120000
+      socketTimeout: 60000
+      maxWaitTime: 120000
