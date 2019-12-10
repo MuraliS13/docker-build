@@ -30,10 +30,6 @@ logging:
   level.org.edgexfoundry: INFO
   file: /saarthaiot/logs/trigger-rulesengine.log
 spring:
-  cloud:
-    consul:
-      discovery:
-        health-check-path: /ping
   data:
     mongodb:
       username: rules_engine_user
